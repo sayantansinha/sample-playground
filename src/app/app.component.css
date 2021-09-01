@@ -1,0 +1,12 @@
+.tag-input {
+  border: 1px solid silver;
+  border-radius: 5px;
+  flex: 1;
+  resize: both;
+  background-color: white;
+  padding: 5px;
+  position: relative;
+  min-height: 80px;
+  max-height: 200px;
+  overflow: auto;
+}

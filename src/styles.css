@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --columns: 40;
+  --columnWidth: calc(100% / var(--columns));
+  --gridGapH: 15px;
+  --largeGridGapH: 40px;
+  --gridGapV: 15px;
+  --inputBorderColor: 1px solid silver;
+  --sectionPadding: 10px;
+  --formHeight: 280px;
+  --setAvailsDisplayOff: none;
+  --setAvailsDisplayOn: flex;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif !important;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(0, 0, 0, 0.4);
+}
